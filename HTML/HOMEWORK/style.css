@@ -1,0 +1,17 @@
+#head1 {
+    color: brown;
+    font-style: italic;
+}
+
+#head2 {
+    color: burlywood;
+    background: black;
+    width: 150px;
+    padding: 5px;
+    font-family: "Cantarell Extra Bold", serif;
+}
+
+#head3 {
+    font-style: oblique;
+    font-size: 23px;
+}
