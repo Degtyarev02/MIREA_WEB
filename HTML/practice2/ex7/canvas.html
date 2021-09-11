@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX7</title>
+    <script>
+
+        function circle()
+        {
+            let canvas = document.getElementById('circle');
+            let obCanvas = canvas.getContext('2d');
+
+            obCanvas.beginPath();
+            obCanvas.arc(150, 75, 50, 0, 2*Math.PI, false);
+            obCanvas.lineWidth = 1;
+            obCanvas.strokeStyle = 'red';
+            obCanvas.stroke();
+
+            let inCirc = canvas.getContext('2d');
+
+            inCirc.beginPath();
+            obCanvas.arc(150, 75, 25, 0, 2*Math.PI, false);
+            obCanvas.lineWidth = 1;
+            obCanvas.strokeStyle = 'red';
+            obCanvas.stroke();
+        }
+    </script>
+</head>
+<body onload="circle()">
+
+<h3>Дегтярев Владимир Сергеевич</h3>
+<canvas id="circle"></canvas>
+</body>
+</html>
