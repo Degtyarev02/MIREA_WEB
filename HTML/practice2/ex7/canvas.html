@@ -1,36 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>EX7</title>
+    <title>canvas</title>
+    <meta charset="utf-8">
     <script>
-
-        function circle()
-        {
-            let canvas = document.getElementById('circle');
-            let obCanvas = canvas.getContext('2d');
-
-            obCanvas.beginPath();
-            obCanvas.arc(150, 75, 50, 0, 2*Math.PI, false);
-            obCanvas.lineWidth = 1;
-            obCanvas.strokeStyle = 'red';
-            obCanvas.stroke();
-
-            let inCirc = canvas.getContext('2d');
-
-            inCirc.beginPath();
-            obCanvas.arc(150, 75, 25, 0, 2*Math.PI, false);
-            obCanvas.lineWidth = 1;
-            obCanvas.strokeStyle = 'red';
-            obCanvas.stroke();
+        window.onload = function () {
+            var drawingCanvas = document.getElementById('smile');
+            if (drawingCanvas && drawingCanvas.getContext) {
+                var context = drawingCanvas.getContext('2d');
+                context.strokeStyle = "#000";
+                context.fillStyle = "#53ab9b";
+                context.beginPath();
+                context.arc(100, 100, 50, 0, Math.PI * 2, true);
+                context.closePath();
+                context.stroke();
+                context.fill();
+                context.fillStyle = "red";
+                context.beginPath();
+                context.arc(100, 100, 25, 0, Math.PI * 2, true);
+                context.closePath();
+                context.stroke();
+                context.fill();
+                context.fillStyle = "grey";
+                context.beginPath();
+                context.lineTo(150, 150);
+                context.lineTo(150, 300);
+                context.lineTo(300, 150);
+                context.closePath();
+                context.fill();
+                context.fillStyle = "orange";
+                context.beginPath();
+                context.lineTo(160, 160);
+                context.lineTo(160, 275);
+                context.lineTo(275, 160);
+                context.closePath();
+                context.fill();
+                context.fillStyle = "blue";
+                context.beginPath();
+                context.rect(300, 200, 300, 100);
+                context.closePath();
+                context.fill();
+                context.fillStyle = "yellow";
+                context.beginPath();
+                context.rect(310, 210, 275, 75);
+                context.closePath();
+                context.fill();
+            }
         }
     </script>
 </head>
-<body onload="circle()">
-
-
-
+<body>
 <h3>Дегтярев Владимир Сергеевич</h3>
-<canvas id="circle"></canvas>
+<canvas id="smile" width="800" height="500">
+</canvas>
 </body>
 </html>
