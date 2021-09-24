@@ -60,8 +60,13 @@ header {
         margin-left: auto;
         display: flex;
         align-items: center;
-        margin-right: 20px;
+        margin-right: 50px;
         font-size: 20px;
+        &:hover {
+          -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          transform: scale(1.2);
+        }
       }
     }
   }
@@ -98,6 +103,7 @@ header {
       ul {
         list-style-type: none;
         padding-left: 0;
+        padding-bottom: 20px;
 
         li {
           margin-top: 10px;
@@ -108,6 +114,16 @@ header {
             font-size: 30px;
             color: #555555;
           }
+        }
+      }
+      .contactMe {
+        padding: 15px 25px;
+        font-size: 20px;
+        color: #3c3c3c;
+        background: #ffdbac;
+        border-radius: 6px;
+        &:hover{
+          background: #c09c67;
         }
       }
     }
@@ -124,7 +140,7 @@ header {
   justify-content: center;
   flex-direction: column;
 
-  h5{
+  h5 {
     font-size: 40px;
     margin-bottom: 0;
     padding-right: 90px;
@@ -183,12 +199,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  .mainContacts{
+
+  .mainContacts {
     width: 70%;
-    .contacts{
+
+    .contacts {
       display: flex;
       flex-direction: column;
       align-items: center;
+
       a {
         width: fit-content;
         font-weight: 500;
@@ -196,6 +215,7 @@ footer {
         font-style: normal;
         font-size: 20px;
         color: #3c3c3c;
+
         &:hover {
           color: #878787;
         }

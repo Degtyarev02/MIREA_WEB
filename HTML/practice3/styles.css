@@ -52,8 +52,13 @@ header .navigation .allElements .number {
   margin-left: auto;
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 50px;
   font-size: 20px;
+}
+header .navigation .allElements .number:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .mainInfo {
   display: flex;
@@ -82,6 +87,7 @@ header .navigation .allElements .number {
 .mainInfo .about .greetings ul {
   list-style-type: none;
   padding-left: 0;
+  padding-bottom: 20px;
 }
 .mainInfo .about .greetings ul li {
   margin-top: 10px;
@@ -91,6 +97,16 @@ header .navigation .allElements .number {
 .mainInfo .about .greetings ul li a {
   font-size: 30px;
   color: #555555;
+}
+.mainInfo .about .greetings .contactMe {
+  padding: 15px 25px;
+  font-size: 20px;
+  color: #3c3c3c;
+  background: #ffdbac;
+  border-radius: 6px;
+}
+.mainInfo .about .greetings .contactMe:hover {
+  background: #c09c67;
 }
 .mainInfo .about img {
   margin-left: auto;
