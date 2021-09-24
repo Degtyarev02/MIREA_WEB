@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5vAw.ttf) format('truetype');
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  font-family: 'Roboto', serif;
+  padding: 0;
+  margin: 0;
+}
+header {
+  margin: 0;
+  padding: 0;
+}
+header .navigation {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+  position: sticky !important;
+}
+header .navigation .allElements {
+  height: 80px;
+  background: bisque;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+header .navigation .allElements .info {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+header .navigation .allElements .info img {
+  padding: 16px 0 16px 25px;
+}
+header .navigation .allElements .info ul {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style-type: none;
+}
+header .navigation .allElements .info ul li a {
+  font-size: 20px;
+  padding: 10px 10px 10px 15px;
+}
+header .navigation .allElements .info ul li a:hover {
+  color: #555555;
+}
+header .navigation .allElements .number {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 20px;
+}
+.mainInfo {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.mainInfo .about {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 70%;
+}
+.mainInfo .about .greetings h2 {
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.mainInfo .about .greetings p {
+  font-size: 25px;
+  margin-top: 0;
+  font-weight: 300;
+  color: #555555;
+}
+.mainInfo .about .greetings ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.mainInfo .about .greetings ul li {
+  margin-top: 10px;
+  font-size: 30px;
+  color: #555555;
+}
+.mainInfo .about .greetings ul li a {
+  font-size: 30px;
+  color: #555555;
+}
+.mainInfo .about img {
+  margin-left: auto;
+}
+.stack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.stack .java {
+  padding-top: 30px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.stack .java .javaDescription {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.stack .java .javaDescription h4 {
+  font-size: 40px;
+  margin-bottom: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.stack .java .javaDescription p {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  color: #555555;
+}
+.stack .java .javaDescription aside {
+  width: 70%;
+  float: right;
+  padding-left: 8px;
+  box-shadow: inset 5px 0 5px -5px #000f68;
+  font-style: italic;
+  margin-top: 5px;
+  margin-left: 0;
+}
+.stack .java img {
+  margin-left: auto;
+  margin-right: auto;
+}
+/*# sourceMappingURL=styles.css.map */
