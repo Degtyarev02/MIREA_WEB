@@ -19,37 +19,43 @@ header {
   padding: 0;
 }
 header .navigation {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 header .navigation .allElements {
   height: 80px;
-  background: bisque;
+  background: #FFE4C4FF;
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
 }
 header .navigation .allElements .info {
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
+  height: available;
 }
 header .navigation .allElements .info img {
   padding: 16px 0 16px 25px;
 }
 header .navigation .allElements .info ul {
   display: flex;
-  flex-wrap: nowrap;
+  height: 80px;
+  margin: 0;
   list-style-type: none;
+  align-items: center;
+}
+header .navigation .allElements .info ul li {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  transition: background 0.1s linear;
 }
 header .navigation .allElements .info ul li a {
   font-size: 20px;
-  padding: 10px 10px 10px 15px;
-  margin-left: 5px;
+  padding: 15px;
+  color: black;
 }
-header .navigation .allElements .info ul li a:hover {
-  border: solid #c09c67 2px;
-  border-radius: 3px;
-  color: #555555;
+header .navigation .allElements .info ul li:hover,
+header .navigation .allElements .info ul li:active {
+  background: #ffd8aa;
 }
 header .navigation .allElements .number {
   margin-left: auto;
@@ -57,11 +63,10 @@ header .navigation .allElements .number {
   align-items: center;
   margin-right: 50px;
   font-size: 20px;
+  transition: font-size 0.15s linear;
 }
 header .navigation .allElements .number:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  font-size: 25px;
 }
 .mainInfo {
   display: flex;
@@ -78,7 +83,7 @@ header .navigation .allElements .number:hover {
 .mainInfo .about .greetings {
   padding: 60px;
   background: #f4f4f4;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .mainInfo .about .greetings h2 {
   font-size: 35px;
@@ -116,12 +121,13 @@ header .navigation .allElements .number:hover {
   padding: 15px 25px;
   font-size: 20px;
   color: #3c3c3c;
-  background: #ffdbac;
-  border-radius: 6px;
+  background: #FFE4C4FF;
+  border-radius: 8px;
   margin-top: 10px;
+  transition: background 0.1s linear;
 }
 .mainInfo .about .greetings .contactMe:hover {
-  background: #c09c67;
+  background: #ffd8aa;
 }
 .mainInfo .about img {
   margin-left: auto;
@@ -172,17 +178,16 @@ header .navigation .allElements .number:hover {
   margin-top: 5px;
   margin-left: 0;
 }
-.stack .java .javalogo {
+.stack .java .logo {
   margin-left: auto;
 }
-.stack .java .clogo {
-  margin-left: auto;
+.stack .java .logo-c {
   margin-right: auto;
 }
 footer {
   height: 200px;
   margin-top: 100px;
-  background: bisque;
+  background: #FFE4C4FF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,11 +202,12 @@ footer .mainContacts .contacts {
 }
 footer .mainContacts .contacts a {
   width: fit-content;
-  font-weight: 500;
+  font-weight: 300;
   margin-bottom: 15px;
   font-style: normal;
   font-size: 20px;
-  color: #3c3c3c;
+  color: #555555;
+  transition: color 0.1s linear;
 }
 footer .mainContacts .contacts a:hover {
   color: #878787;

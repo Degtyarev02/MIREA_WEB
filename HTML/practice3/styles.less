@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+@import "vars";
+
 a {
   text-decoration: none;
   color: black;
@@ -17,19 +19,18 @@ header {
   padding: 0;
 
   .navigation {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 
     .allElements {
       height: 80px;
-      background: bisque;
+      background: @primary;
       display: flex;
-      flex-wrap: nowrap;
       align-items: center;
 
       .info {
         display: flex;
-        flex-wrap: nowrap;
         align-items: center;
+        height: available;
 
         img {
           padding: 16px 0 16px 25px;
@@ -37,19 +38,26 @@ header {
 
         ul {
           display: flex;
-          flex-wrap: nowrap;
+          height: 80px;
+          margin: 0;
           list-style-type: none;
+          align-items: center;
 
           li {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            transition: background .1s linear;
+
             a {
               font-size: 20px;
-              padding: 10px 10px 10px 15px;
-              margin-left: 5px;
-              &:hover{
-                border: solid #c09c67 2px;
-                border-radius: 3px;
-                color: #555555;
-              }
+              padding: 15px;
+              color: black;
+            }
+
+            &:hover,
+            &:active {
+              background: darken(@primary, 5%);
             }
           }
 
@@ -63,10 +71,10 @@ header {
         align-items: center;
         margin-right: 50px;
         font-size: 20px;
+        transition: font-size .15s linear;
+
         &:hover {
-          -webkit-transform: scale(1.2);
-          -ms-transform: scale(1.2);
-          transform: scale(1.2);
+          font-size: 25px;
         }
       }
     }
@@ -89,7 +97,8 @@ header {
     .greetings {
       padding: 60px;
       background: #f4f4f4;
-      border-radius: 10px;
+      border-radius: @radius;
+
       h2 {
         font-size: 35px;
         font-weight: 500;
@@ -101,7 +110,7 @@ header {
         font-size: 20px;
         margin-top: 0;
         font-weight: 300;
-        color: #555555;
+        color: @third;
       }
 
       ul {
@@ -113,12 +122,14 @@ header {
           margin-top: 10px;
 
           width: fit-content;
+
           a {
             display: flex;
             align-items: center;
             font-size: 25px;
-            color: #555555;
-            img{
+            color: @third;
+
+            img {
               margin-right: 15px;
               margin-top: 3px;
               margin-left: 0;
@@ -126,18 +137,21 @@ header {
           }
 
 
-
         }
       }
+
       .contactMe {
         padding: 15px 25px;
         font-size: 20px;
         color: #3c3c3c;
-        background: #ffdbac;
-        border-radius: 6px;
+        background: @primary;
+        border-radius: @radius;
         margin-top: 10px;
-        &:hover{
-          background: #c09c67;
+        transition: background .1s linear;
+
+        &:hover {
+          background: darken(@primary, 5%);
+
         }
       }
     }
@@ -186,7 +200,7 @@ header {
         padding: 0;
         margin: 0;
         font-weight: 300;
-        color: #555555;
+        color: @third;
       }
 
       aside {
@@ -200,12 +214,11 @@ header {
       }
     }
 
-    .javalogo {
+    .logo{
       margin-left: auto;
-    }
-    .clogo{
-      margin-left: auto;
-      margin-right: auto;
+      &-c{
+        margin-right: auto;
+      }
     }
   }
 }
@@ -213,7 +226,7 @@ header {
 footer {
   height: 200px;
   margin-top: 100px;
-  background: bisque;
+  background: @primary;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,11 +241,12 @@ footer {
 
       a {
         width: fit-content;
-        font-weight: 500;
+        font-weight: 300;
         margin-bottom: 15px;
         font-style: normal;
         font-size: 20px;
-        color: #3c3c3c;
+        color: @third;
+        transition: color .1s linear;
 
         &:hover {
           color: #878787;
