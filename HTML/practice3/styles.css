@@ -25,6 +25,7 @@ header .navigation .allElements {
 header .navigation .allElements .info {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: available;
 }
 header .navigation .allElements .info img {
@@ -50,6 +51,7 @@ header .navigation .allElements .info ul li a {
 header .navigation .allElements .info ul li:hover,
 header .navigation .allElements .info ul li:active {
   background: #ffd8aa;
+  border-radius: 8px;
 }
 header .navigation .allElements .number {
   margin-left: auto;
@@ -129,6 +131,7 @@ header .navigation .allElements .number:hover {
   margin-left: auto;
 }
 .stack {
+  line-height: 1.3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -206,6 +209,6 @@ footer .mainContacts .contacts a {
   transition: color 0.1s linear;
 }
 footer .mainContacts .contacts a:hover {
-  color: #878787;
+  color: #151515;
 }
 /*# sourceMappingURL=styles.css.map */
