@@ -1,16 +1,11 @@
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5vAw.ttf) format('truetype');
-}
 a {
   text-decoration: none;
   color: black;
 }
+* {
+  font-family: 'Roboto', sans-serif;
+}
 body {
-  font-family: 'Roboto', serif;
   padding: 0;
   margin: 0;
 }
@@ -51,7 +46,6 @@ header .navigation .allElements .info ul li {
 header .navigation .allElements .info ul li a {
   font-size: 20px;
   padding: 15px;
-  color: black;
 }
 header .navigation .allElements .info ul li:hover,
 header .navigation .allElements .info ul li:active {
@@ -77,13 +71,15 @@ header .navigation .allElements .number:hover {
   padding-top: 30px;
   display: flex;
   flex-wrap: nowrap;
-  align-items: center;
+  align-items: end;
   width: 70%;
 }
 .mainInfo .about .greetings {
   padding: 60px;
   background: #f4f4f4;
   border-radius: 8px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 .mainInfo .about .greetings h2 {
   font-size: 35px;
@@ -173,7 +169,7 @@ header .navigation .allElements .number:hover {
   width: 70%;
   float: right;
   padding-left: 8px;
-  box-shadow: inset 5px 0 5px -5px #000f68;
+  border-left: solid 2px #555555;
   font-style: italic;
   margin-top: 5px;
   margin-left: 0;

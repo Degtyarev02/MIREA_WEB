@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 @import "vars";
 
 a {
   text-decoration: none;
   color: black;
-
+}
+*{
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  font-family: 'Roboto', serif;
   padding: 0;
   margin: 0;
 }
@@ -52,7 +52,6 @@ header {
             a {
               font-size: 20px;
               padding: 15px;
-              color: black;
             }
 
             &:hover,
@@ -91,13 +90,15 @@ header {
     padding-top: 30px;
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: end;
     width: 70%;
 
     .greetings {
       padding: 60px;
       background: #f4f4f4;
       border-radius: @radius;
+      margin-bottom: 20px;
+      margin-left: 20px;
 
       h2 {
         font-size: 35px;
@@ -207,7 +208,7 @@ header {
         width: 70%;
         float: right;
         padding-left: 8px;
-        box-shadow: inset 5px 0 5px -5px #000f68;
+        border-left: solid 2px @third;
         font-style: italic;
         margin-top: 5px;
         margin-left: 0;
