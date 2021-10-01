@@ -1,0 +1,51 @@
+body {
+  margin-left: 140px;
+}
+.pr4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pr4 .ex1 .task1 .top {
+  vertical-align: sub;
+}
+.pr4 .ex2 .task1 img {
+  box-shadow: 0 0 10px 10px #616161;
+}
+.pr4 .ex2 .task2 img {
+  margin-top: 40px;
+  border-radius: 45px;
+  box-shadow: -18px 0 20px -20px red, 18px 0 20px -20px yellow, 0 18px 20px -20px blue, 0 -18px 20px -20px green;
+  transition: box-shadow 0.15s linear;
+}
+.pr4 .ex2 .task2 img:hover {
+  box-shadow: -18px 0 20px -20px yellow, 18px 0 20px -20px blue, 0 18px 20px -20px green, 0 -18px 20px -20px red;
+}
+.pr4 .ex2 .task3 p {
+  margin-top: 40px;
+  padding: 20px;
+  width: 400px;
+  font-size: 24px;
+  background: #ffd8aa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px #a4a4a4 inset;
+}
+.pr4 .ex2 .task5 .chess-board {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.pr4 .ex2 .task5 .chess-board th {
+  padding: 0.5em;
+}
+.pr4 .ex2 .task5 .chess-board td {
+  border: 1px solid;
+  width: 2em;
+  height: 2em;
+}
+.pr4 .ex2 .task5 .chess-board .light {
+  background: #f4f4f4;
+}
+.pr4 .ex2 .task5 .chess-board .dark {
+  background: #151515;
+}
+/*# sourceMappingURL=pr4style.css.map */

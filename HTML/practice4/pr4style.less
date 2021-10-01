@@ -1,0 +1,81 @@
+body {
+  margin-left: 140px;
+}
+
+.pr4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .ex1 {
+    .task1 {
+      .top {
+        vertical-align: sub;
+      }
+    }
+  }
+
+  .ex2 {
+    .task1 {
+      img {
+        box-shadow: 0 0 10px 10px #616161;
+      }
+    }
+
+    .task2 {
+      img {
+        margin-top: 40px;
+        border-radius: 45px;
+        box-shadow: -18px 0 20px -20px red,
+        18px 0 20px -20px yellow,
+        0 18px 20px -20px blue,
+          0 -18px 20px -20px green;
+        transition: box-shadow .15s linear;
+
+        &:hover {
+          box-shadow: -18px 0 20px -20px yellow,
+          18px 0 20px -20px blue,
+          0 18px 20px -20px green,
+            0 -18px 20px -20px red;
+        }
+      }
+    }
+
+    .task3 {
+      p {
+        margin-top: 40px;
+        padding: 20px;
+        width: 400px;
+        font-size: 24px;
+        background: #ffd8aa;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 5px #a4a4a4 inset;
+      }
+    }
+
+    .task5 {
+      .chess-board {
+        border-spacing: 0;
+        border-collapse: collapse;
+
+        th {
+          padding: .5em;
+        }
+
+        td {
+          border: 1px solid;
+          width: 2em;
+          height: 2em;
+        }
+
+        .light {
+          background: #f4f4f4;
+        }
+        .dark {
+          background: #151515;
+        }
+      }
+    }
+  }
+}
+
