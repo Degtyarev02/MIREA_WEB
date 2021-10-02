@@ -6,8 +6,14 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.pr4 .ex1 .task1 span {
+  font-size: 30px;
+}
 .pr4 .ex1 .task1 .top {
   vertical-align: sub;
+}
+.pr4 .ex1 .task2 {
+  font-size: 30px;
 }
 .pr4 .ex2 .task1 img {
   box-shadow: 0 0 10px 10px #616161;
@@ -25,10 +31,32 @@ body {
   margin-top: 40px;
   padding: 20px;
   width: 400px;
+  color: #f4f4f4;
   font-size: 24px;
-  background: #ffd8aa;
+  background: #ffad00;
   border-radius: 10px;
   box-shadow: 0 0 10px 5px #a4a4a4 inset;
+}
+.pr4 .ex2 .task4 .card:after {
+  content: '\2660' '\2663' '\2665' '\2666';
+}
+.pr4 .ex2 .task4 .greek:after {
+  content: '\3B1' '\3B2' '\3B3' '\3B4' '\3B5';
+}
+.pr4 .ex2 .task4 .money:after {
+  content: '\A2' '\A3' '\A5';
+}
+.pr4 .ex2 .task4 .mark:after {
+  content: '\AE' '\A9';
+}
+.pr4 .ex2 .task4 .divide:after {
+  content: '\BC' ' ' '\BD' ' ' '\BE';
+}
+.pr4 .ex2 .task4 .text:after {
+  content: '\B6' '\A7' '\2013' '  ' '\2014';
+}
+.pr4 .ex2 .task4 .helpful:after {
+  content: '\2620' '\262A' '\2706' '\262D' '\260E';
 }
 .pr4 .ex2 .task5 .chess-board {
   border-spacing: 0;
@@ -103,6 +131,13 @@ body {
   transform: rotate(-44deg);
   background: #45c78b;
 }
+.pr4 .ex2 .task7 {
+  margin-top: 40px;
+  width: fit-content;
+  padding: 40px;
+  border-radius: 10px;
+  background: #f4f4f4;
+}
 .pr4 .ex2 .task7 p {
   font-family: sans-serif;
   font-size: 18px;
@@ -111,8 +146,9 @@ body {
   border: none;
   font-size: 16px;
   height: 30px;
-  background: #f4f4f4;
+  background: #eaeaea;
   margin-left: 10px;
+  border-radius: 5px;
 }
 .pr4 .ex2 .task7 input:valid + span:after {
   content: url(../../img/check.svg);
@@ -131,8 +167,12 @@ body {
   color: #f4f4f4;
   border-radius: 5px;
   font-size: 19px;
+  transition: background 0.15s linear;
 }
-.pr4 .ex2 .task8 .square {
+.pr4 .ex2 .task7 button:hover {
+  background: #38ba7e;
+}
+.pr4 .task8 .square {
   width: 25vw;
   height: 25vw;
   background: #45c78b;
@@ -143,7 +183,7 @@ body {
   margin-right: -50%;
   margin-top: 40px;
 }
-.pr4 .ex2 .task8 .square .content {
+.pr4 .task8 .square .content {
   position: relative;
   top: 50%;
   text-transform: uppercase;
@@ -151,15 +191,15 @@ body {
   font-family: sans-serif;
   font-size: 2vw;
 }
-.pr4 .ex2 .task9 ul {
+.pr4 .task9 ul {
   font-size: 18px;
   font-family: sans-serif;
   list-style-type: none;
 }
-.pr4 .ex2 .task9 ul li {
+.pr4 .task9 ul li {
   margin-bottom: 10px;
 }
-.pr4 .ex2 .task9 ul li input:checked + span {
+.pr4 .task9 ul li input:checked + span {
   background: yellow;
 }
 /*# sourceMappingURL=pr4style.css.map */

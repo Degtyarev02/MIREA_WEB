@@ -9,9 +9,16 @@ body {
 
   .ex1 {
     .task1 {
+      span {
+        font-size: 30px;
+      }
+
       .top {
         vertical-align: sub;
       }
+    }
+    .task2{
+      font-size: 30px;
     }
   }
 
@@ -46,10 +53,55 @@ body {
         margin-top: 40px;
         padding: 20px;
         width: 400px;
+        color: #f4f4f4;
         font-size: 24px;
-        background: #ffd8aa;
+        background: #ffad00;
         border-radius: 10px;
         box-shadow: 0 0 10px 5px #a4a4a4 inset;
+      }
+    }
+
+    .task4 {
+      .card {
+        &:after {
+          content: '\2660' '\2663' '\2665' '\2666';
+        }
+      }
+
+      .greek {
+        &:after {
+          content: '\3B1' '\3B2' '\3B3' '\3B4' '\3B5';
+        }
+      }
+
+      .money {
+        &:after {
+          content: '\A2' '\A3' '\A5';
+        }
+      }
+
+      .mark {
+        &:after {
+          content: '\AE' '\A9';
+        }
+      }
+
+      .divide {
+        &:after {
+          content: '\BC' ' ' '\BD' ' ' '\BE';
+        }
+      }
+
+      .text {
+        &:after {
+          content: '\B6' '\A7' '\2013' '  ' '\2014';
+        }
+      }
+
+      .helpful {
+        &:after {
+          content: '\2620' '\262A' '\2706' '\262D' '\260E';
+        }
       }
     }
 
@@ -143,6 +195,12 @@ body {
     }
 
     .task7 {
+      margin-top: 40px;
+      width: fit-content;
+      padding: 40px;
+      border-radius: 10px;
+      background: #f4f4f4;
+
       p {
         font-family: sans-serif;
         font-size: 18px;
@@ -152,8 +210,9 @@ body {
         border: none;
         font-size: 16px;
         height: 30px;
-        background: #f4f4f4;
+        background: #eaeaea;
         margin-left: 10px;
+        border-radius: 5px;
 
         &:valid + span:after {
           content: url(../../img/check.svg);
@@ -176,42 +235,50 @@ body {
         color: #f4f4f4;
         border-radius: 5px;
         font-size: 19px;
-      }
-    }
+        transition: background .15s linear;
 
-    .task8 {
-      .square {
-        width: 25vw;
-        height: 25vw;
-        background: #45c78b;
-        border: solid #09b368;
-        text-align: center;
-        border-radius: 1em;
-        padding: 1em;
-        margin-right: -50%;
-        margin-top: 40px;
-
-        .content {
-          position: relative;
-          top: 50%;
-          text-transform: uppercase;
-          color: white;
-          font-family: sans-serif;
-          font-size: 2vw;
+        &:hover {
+          background: darken(#45c78b, 5%);
         }
       }
     }
-    .task9{
-      ul{
-        font-size: 18px;
+  }
+
+  .task8 {
+    .square {
+      width: 25vw;
+      height: 25vw;
+      background: #45c78b;
+      border: solid #09b368;
+      text-align: center;
+      border-radius: 1em;
+      padding: 1em;
+      margin-right: -50%;
+      margin-top: 40px;
+
+      .content {
+        position: relative;
+        top: 50%;
+        text-transform: uppercase;
+        color: white;
         font-family: sans-serif;
-        list-style-type: none;
-        li{
-          margin-bottom: 10px;
-          input{
-            &:checked + span{
-                background: yellow;
-            }
+        font-size: 2vw;
+      }
+    }
+  }
+
+  .task9 {
+    ul {
+      font-size: 18px;
+      font-family: sans-serif;
+      list-style-type: none;
+
+      li {
+        margin-bottom: 10px;
+
+        input {
+          &:checked + span {
+            background: yellow;
           }
         }
       }
