@@ -1,0 +1,121 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+* {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+header {
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+}
+header .navigation {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+header .navigation .allElements {
+  position: static;
+  height: 80px;
+  background: #294528;
+  display: flex;
+  align-items: center;
+}
+header .navigation .allElements .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: available;
+}
+header .navigation .allElements .info img {
+  position: relative;
+  left: 16px;
+}
+header .navigation .allElements .info ul {
+  display: flex;
+  margin-left: auto;
+  height: 80px;
+  list-style-type: none;
+  align-items: center;
+}
+header .navigation .allElements .info ul li {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  transition: background 0.1s linear;
+}
+header .navigation .allElements .info ul li a {
+  font-size: 20px;
+  padding: 15px;
+  color: white;
+}
+header .navigation .allElements .info ul li:hover,
+header .navigation .allElements .info ul li:visited,
+header .navigation .allElements .info ul li.active {
+  background: #1f351f;
+}
+header .navigation .allElements .number {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  font-size: 20px;
+  transition: font-size 0.15s linear;
+  color: white!important;
+}
+header .navigation .allElements .number:hover {
+  font-size: 25px;
+}
+.tanks {
+  background: #bababa;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+}
+.tanks .tanks-models {
+  width: fit-content;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tanks .tanks-models .tank {
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 20px;
+}
+.tanks .tanks-models .tank:hover,
+.tanks .tanks-models .tank.active {
+  background: #a4a4a4;
+}
+.info-tanks {
+  width: 60%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info-tanks .label h2 {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info-tanks .armata {
+  margin-bottom: 60px;
+}
+.info-tanks .armata-img {
+  float: left;
+  padding-right: 15px;
+}
+.info-tanks .armata-img img {
+  border-radius: 5px;
+}
+.info-tanks .armata-info {
+  font-size: 20px;
+  color: #3c3c3c;
+}
+/*# sourceMappingURL=pr5.css.map */
