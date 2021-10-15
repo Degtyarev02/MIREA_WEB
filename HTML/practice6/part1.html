@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="pr6.css">
+</head>
+<body>
+
+<div class="im1">
+    <div class="left">left</div>
+    <div class="right">right</div>
+</div>
+
+<div class="im2">
+    <div class="a">a</div>
+    <div class="b">b</div>
+    <div class="c">c</div>
+    <div class="d">d</div>
+    <div class="e">e</div>
+</div>
+
+<div class="wrapper">
+    <div class="header">header</div>
+    <div class="sidebar">sidebar</div>
+    <div class="nav">navigation</div>
+    <div class="main">main</div>
+    <div class="ads">ads</div>
+    <div class="footer">footer</div>
+</div>
+
+<div class="img2.1">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+</div>
+
+<div class="img2.2">
+    <div class="a">A</div>
+    <div class="b">B</div>
+    <div class="e">E</div>
+    <div class="c">C</div>
+    <div class="d">D</div>
+</div>
+
+<header>
+    <a href="#main-menu"
+       id="main-menu-toggle"
+       class="menu-toggle"
+       aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars" aria-hidden="true"></span>
+    </a>
+
+    <h1 class="logo">hamburgers</h1>
+
+    <nav id="main-menu" class="main-menu" aria-label="Main menu">
+        <a href="#main-menu-toggle"
+           id="main-menu-close"
+           class="menu-close"
+           aria-label="Close main menu">
+            <span class="sr-only">Close main menu</span>
+            <span class="fa fa-close" aria-hidden="true"></span>
+        </a>
+        <h2 id="main-menu-heading" class="sr-only">Main menu</h2>
+        <ul aria-labelledby="main-menu-heading">
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <a href="#main-menu-toggle"
+       class="backdrop"
+       tabindex="-1"
+       aria-hidden="true" hidden></a>
+</header>
+</body>
+</html>

@@ -65,7 +65,7 @@ header .navigation .allElements .number {
   margin-right: 50px;
   font-size: 20px;
   transition: font-size 0.15s linear;
-  color: white!important;
+  color: white !important;
 }
 header .navigation .allElements .number:hover {
   font-size: 25px;
