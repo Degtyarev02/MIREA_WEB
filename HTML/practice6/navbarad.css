@@ -95,6 +95,7 @@ ul li {
     margin-right: auto;
     margin-top: 35px;
     transform: translateY(0);
+    transition: 0.3s ease-in-out;
   }
 }
 /*# sourceMappingURL=navbarad.css.map */
