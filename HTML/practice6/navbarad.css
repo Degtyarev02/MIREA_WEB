@@ -15,7 +15,7 @@ body {
 nav {
   margin: 10px;
   position: relative;
-  border: 2px deepskyblue solid;
+  border: 4px deepskyblue solid;
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -24,6 +24,7 @@ nav {
 nav h2 {
   margin-left: 10px;
   position: absolute;
+  font-weight: 300;
 }
 .hamburger-checker {
   margin: 0;
@@ -74,7 +75,7 @@ ul li {
   top: 4px;
   display: block;
 }
-@media (max-width: 560px) {
+@media (max-width: 767px) {
   .hamburger-box {
     display: inline-block;
   }

@@ -98,7 +98,7 @@ body {
   margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
-  width: 30%;
+  width: 450px;
 }
 .img2\.2 > * {
   border: 3px #00d9ff solid;
@@ -107,7 +107,7 @@ body {
   margin: 10px;
 }
 .img2\.2 .a {
-  flex-basis: 90%;
+  flex-basis: 79%;
 }
 .img2\.2 .b {
   flex-basis: 56%;
