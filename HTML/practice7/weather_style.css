@@ -71,6 +71,7 @@ section {
   font-size: 30px;
   margin-bottom: 40px;
   color: #595959;
+  text-align: center;
 }
 .forecast .days {
   display: flex;
