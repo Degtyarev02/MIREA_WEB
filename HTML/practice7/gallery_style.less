@@ -2,6 +2,7 @@
   font-family: 'Roboto', sans-serif;
   margin:      0;
   padding:     0;
+  box-sizing:  border-box;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
     height:          40vh;
     border-radius:   0 0 15px 15px;
 
-    background: linear-gradient(315deg, rgb(230, 255, 0), rgb(255, 133, 0));
+    background:      linear-gradient(315deg, rgb(230, 255, 0), rgb(255, 133, 0));
     width:           100%;
     display:         flex;
     flex-direction:  column;
@@ -42,7 +43,7 @@ body {
   flex-wrap: wrap;
 
   .column {
-    flex:      24%;
+    flex:      25%;
     max-width: 25%;
     padding:   5px;
 
@@ -58,7 +59,7 @@ body {
 @media (max-width: 1000px) and (min-width: 710px) {
   .row {
     .column {
-      flex:      48% !important;
+      flex:      50% !important;
       max-width: 50% !important;
     }
   }

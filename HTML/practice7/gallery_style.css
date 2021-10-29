@@ -2,6 +2,7 @@
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -33,7 +34,7 @@ body {
   flex-wrap: wrap;
 }
 .row .column {
-  flex: 24%;
+  flex: 25%;
   max-width: 25%;
   padding: 5px;
 }
@@ -45,7 +46,7 @@ body {
 }
 @media (max-width: 1000px) and (min-width: 710px) {
   .row .column {
-    flex: 48% !important;
+    flex: 50% !important;
     max-width: 50% !important;
   }
 }
