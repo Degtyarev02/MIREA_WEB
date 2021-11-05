@@ -29,7 +29,6 @@ body {
   width: 400px;
   box-shadow: 0 0 10px -5px #949393;
   font-family: sans-serif;
-  transition: all 0.3s ease;
 }
 .card h1 {
   box-sizing: border-box;
@@ -60,21 +59,8 @@ body {
   margin-bottom: 30px;
 }
 .card:hover {
-  height: 650px;
-  width: 500px;
+  transform: scale(1.3) translateY(100px);
   -webkit-filter: blur(0px) !important;
-}
-.card:hover h1 {
-  font-size: 70px;
-  height: 250px;
-}
-.card:hover p {
-  font-size: 26px;
-}
-.card:hover a {
-  font-size: 25px;
-  padding: 25px 35px;
-  margin-bottom: 35px;
 }
 .card1 h1 {
   background: linear-gradient(140deg, #FCAB01, #FE214F);
