@@ -34,32 +34,32 @@
     let card2 = document.getElementById("card2");
     let card3 = document.getElementById("card3");
 
-    card1.addEventListener("mouseenter", function( event ) {
+    card1.addEventListener("mouseenter", function (event) {
         card2.style.filter = "blur(5px)";
         card3.style.filter = "blur(5px)";
     }, false);
 
-    card1.addEventListener("mouseleave", function( event ) {
+    card1.addEventListener("mouseleave", function (event) {
         card2.style.filter = "blur(0px)";
         card3.style.filter = "blur(0px)";
     }, false);
 
-    card2.addEventListener("mouseenter", function( event ) {
+    card2.addEventListener("mouseenter", function (event) {
         card1.style.filter = "blur(5px)";
         card3.style.filter = "blur(5px)";
     }, false);
 
-    card2.addEventListener("mouseleave", function( event ) {
+    card2.addEventListener("mouseleave", function (event) {
         card1.style.filter = "blur(0px)";
         card3.style.filter = "blur(0px)";
     }, false);
 
-    card3.addEventListener("mouseenter", function( event ) {
+    card3.addEventListener("mouseenter", function (event) {
         card1.style.filter = "blur(5px)";
         card2.style.filter = "blur(5px)";
     }, false);
 
-    card3.addEventListener("mouseleave", function( event ) {
+    card3.addEventListener("mouseleave", function (event) {
         card1.style.filter = "blur(0px)";
         card2.style.filter = "blur(0px)";
     }, false);
