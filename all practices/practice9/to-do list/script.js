@@ -26,7 +26,7 @@ function createListElement() {
     }
 
     li.addEventListener("click",addToDone);
-    
+
     function deleteListItem(){
         li.classList.add("delete")
     }
