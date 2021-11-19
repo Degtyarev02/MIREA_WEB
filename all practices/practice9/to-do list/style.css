@@ -48,12 +48,15 @@ li {
   margin-top: 30px;
   color: #efefef;
   font-weight: 300;
-  border: none;
   border-radius: 20px;
   margin-bottom: 10px;
   background: #5340d3;
   transition: all 0.75s ease;
   font-family: sans-serif;
+  border: 2px solid #ffffff;
+}
+li:hover {
+  background: #2e208d;
 }
 li > button {
   background: none;
