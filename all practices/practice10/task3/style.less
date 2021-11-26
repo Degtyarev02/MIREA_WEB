@@ -1,64 +1,63 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
+  margin:     0;
+  padding:    0;
   box-sizing: border-box;
 }
 
-body{
-  display: flex;
+body {
+  display:         flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #00BCB4;
+  align-items:     center;
+  height:          100vh;
+  background:      #00BCB4;
 }
 
-.search{
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background: #c9ecff;
+.search {
+  position:      relative;
+  width:         60px;
+  height:        60px;
+  background:    #c9ecff;
   border-radius: 60px;
-  transition: .3s linear;
-  overflow: hidden;
-  display: flex;
+  transition:    .3s linear;
+  overflow:      hidden;
+  display:       flex;
 
-  .icon{
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    display: flex;
+  .icon {
+    cursor:          pointer;
+    width:           60px;
+    height:          60px;
+    display:         flex;
     justify-content: center;
-    align-items: center;
+    align-items:     center;
   }
 
-  .input{
-    position: relative;
-    width: 270px;
-    height: 60px;
+  .input {
+    position:        relative;
+    width:           270px;
+    height:          60px;
     justify-content: center;
-    align-items: center;
-    display: none;
+    align-items:     center;
+    display:         none;
 
-    #search{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border: none;
-      outline: none;
-      font-size: 16px;
+    #search {
+      position:   absolute;
+      width:      100%;
+      height:     100%;
+      border:     none;
+      outline:    none;
+      font-size:  16px;
       background: #c9ecff;
     }
   }
 }
 
-.clear{
-  position: absolute;
-  left: 99%;
+.clear {
+  position:    absolute;
+  left:        99%;
   margin-left: 5px;
   font-family: sans-serif;
-  cursor: pointer;
+  cursor:      pointer;
 }
-
 
 
 .active {

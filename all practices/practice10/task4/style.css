@@ -10,8 +10,8 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background: #efefef;
+  margin-top: 50px;
+  background: #000928;
 }
 .container {
   display: flex;
@@ -20,11 +20,11 @@ body {
   position: relative;
 }
 .container .icon {
-  border: 2px solid #3c2ab6;
+  border: 2px solid #000928;
   margin-top: 20px;
   width: 100px;
   height: 100px;
-  background: #3c2ab6;
+  background: #000928;
   border-radius: 50%;
   z-index: 10000;
   object-fit: cover;
@@ -33,34 +33,40 @@ body {
   width: 0;
   height: 0;
   border-radius: 20px;
-  background-image: linear-gradient(359.8deg, #0e1448 37.9%, rgba(6, 20, 100, 0.67) 101.9%);
+  background: #005C97;
+  /* fallback for old browsers */
+  background: linear-gradient(to left, #363795, #005C97);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   position: absolute;
   overflow: hidden;
-  top: 0;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  top: 40px;
 }
 .container .info > * {
   text-align: center;
   color: white;
 }
-.container .info .head {
+.container .info .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .info .text .head {
   font-size: 24px;
   margin-bottom: 20px;
+  margin-top: 100px;
 }
-.container .info a {
+.container .info .text a {
+  display: block;
   padding: 20px 25px;
   background: white;
-  color: #3c2ab6;
+  color: #002b67;
   border-radius: 20px;
-  margin-top: 40px;
+  margin-top: 105px;
+  width: 80%;
   text-decoration: none;
 }
-.container .info a:hover {
-  background: #3c2ab6;
+.container .info .text a:hover {
+  background: #002b67;
   color: white;
 }
 .big-icon {

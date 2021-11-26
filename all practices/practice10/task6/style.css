@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   transition: 0.5s linear;
+  font-family: 'Poppins', serif;
 }
 .container {
   width: 100vw;
@@ -32,14 +33,17 @@
   height: 70px;
   padding-left: 15px;
   background: #ffffff;
-  border: 2px solid #008cff;
+  border: 2px solid #3da7ff;
   color: #5e5e5e;
   border-radius: 20px;
   font-size: 17px;
 }
+.login-form input:focus {
+  outline: none;
+}
 .login-form .submit {
   height: 50px !important;
-  background: #008cff;
+  background: #3da7ff;
   border: none;
   text-transform: uppercase;
   color: #ffffff;
@@ -49,10 +53,10 @@
   cursor: pointer;
 }
 .login-form .submit:hover {
-  background: #0070cc;
+  background: #0a90ff;
 }
 .login-form .error {
-  color: darkred;
+  color: #ff0000;
 }
 .login-form a {
   width: 400px;

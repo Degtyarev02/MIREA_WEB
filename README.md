@@ -11,6 +11,7 @@
 | Практическая работа №7 «Адаптивный дизайн и медиа-запросы»                                        | ✅|✅|
 | Практическая работа №8 «Анимация с помощью CSS (transition, transform, keyframes, animation)»     | ✅|✅|
 | Практическая работа №9 «Введение в JavaScript. Основы JavaScript. Функции и события в JavaScript» | ✅|✅|
+| Практическая работа №10 «Обработчики событий на JS, работа с innerText, onclick, onsubmit, setTimeout, setInterval, использование объектов Math и Date» | ✅|❌|
 
 
 ![img](https://media2.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47gdihufmx7yvl1pij9zipaoacjoxndpxsoo79uo2r&rid=giphy.gif&ct=g)

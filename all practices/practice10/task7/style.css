@@ -17,7 +17,7 @@ body {
   width: 300px;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 5px 10px 2px rgba(56, 56, 56, 0.68);
+  box-shadow: 0 5px 10px 2px #2a2a2a;
 }
 .container .rating {
   display: flex;
@@ -31,6 +31,11 @@ body {
   height: 0;
   overflow: hidden;
   width: 0;
+}
+.container .message h3 {
+  margin-bottom: 10px;
+  color: #f5cb42;
+  letter-spacing: 8px;
 }
 .container .message .text-message {
   height: 150px;
@@ -58,7 +63,7 @@ body {
   background: #232323;
 }
 .starSelected {
-  width: auto!important;
-  height: 200px!important;
+  width: auto !important;
+  height: 200px !important;
 }
 /*# sourceMappingURL=style.css.map */

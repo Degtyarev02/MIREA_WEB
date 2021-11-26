@@ -1,11 +1,12 @@
 * {
-  box-sizing: border-box;
-  margin:     0;
-  padding:    0;
-  transition: .5s linear;
+  box-sizing:  border-box;
+  margin:      0;
+  padding:     0;
+  transition:  .5s linear;
+  font-family: 'Poppins', serif;
 }
 
-@primary:         #008cff;
+@primary:         #3da7ff;
 @secondary-grey:  #5e5e5e;
 @secondary-white: #ffffff;
 
@@ -47,6 +48,9 @@
     border-radius: 20px;
     font-size:     17px;
 
+    &:focus{
+      outline: none;
+    }
   }
 
   .submit {
@@ -66,7 +70,7 @@
   }
 
   .error {
-    color: darkred;
+    color: #ff0000;
   }
 
   a {

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 body {
   display: flex;
@@ -16,6 +17,18 @@ body {
   background: rgba(255, 255, 255, 0.4);
   padding: 22px 30px 40px;
   border-radius: 10px;
+}
+.wrapper button {
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background: rgba(77, 178, 236, 0.41);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.wrapper button:hover {
+  background: #2fa5e9;
 }
 .wrapper .captcha-area {
   display: flex;
@@ -43,18 +56,6 @@ body {
   letter-spacing: 10px;
   transform: translate(-50%, -50%);
 }
-.wrapper button {
-  outline: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  background: rgba(77, 178, 236, 0.41);
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-.wrapper button:hover {
-  background: #2fa5e9;
-}
 .captcha-area .reload-btn {
   width: 75px;
   height: 100%;
@@ -74,11 +75,12 @@ body {
   border-radius: 5px;
   border: none;
   background: rgba(255, 255, 255, 0.6);
+  color: #bfbfbf;
 }
 .input-area input::placeholder {
   color: #bfbfbf;
 }
-.input-area .check-btn {
+.check-btn {
   position: absolute;
   right: 7px;
   top: 50%;
@@ -91,7 +93,7 @@ body {
 .input-area input:valid + .check-btn {
   pointer-events: auto;
 }
-.wrapper .status-text {
+.status-text {
   display: none;
   font-size: 18px;
   text-align: center;

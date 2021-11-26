@@ -11,8 +11,8 @@ body {
   height:          100vh;
   display:         flex;
   justify-content: center;
-  align-items:     center;
-  background:      #efefef;
+  margin-top:      50px;
+  background:      #000928;
 
 }
 
@@ -23,51 +23,58 @@ body {
   position:       relative;
 
   .icon {
-    border:        2px solid #3c2ab6;
+    border:        2px solid #000928;
     margin-top:    20px;
     width:         100px;
     height:        100px;
-    background:    #3c2ab6;
+    background:    #000928;
     border-radius: 50%;
     z-index:       10000;
-    object-fit: cover;
+    object-fit:    cover;
   }
 
   .info {
-    width:            0;
-    height:           0;
-    border-radius:    20px;
-    background-image: linear-gradient(359.8deg, rgba(14, 20, 72, 1) 37.9%, rgba(6, 20, 100, 0.67) 101.9%);
-    position:         absolute;
-    overflow:         hidden;
-    top:              0;
-    margin-top:       40px;
-    display:          flex;
-    flex-direction:   column;
-    align-items:      center;
-    justify-content:  center;
+    width:         0;
+    height:        0;
+    border-radius: 20px;
+    background:    #005C97; /* fallback for old browsers */
+    background:    linear-gradient(to left, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position:      absolute;
+    overflow:      hidden;
+    top:           40px;
+
 
     > * {
       text-align: center;
       color:      white;
     }
 
-    .head {
-      font-size:     24px;
-      margin-bottom: 20px;
-    }
+    .text {
+      display:        flex;
+      flex-direction: column;
+      align-items:    center;
 
-    a {
-      padding:         20px 25px;
-      background:      white;
-      color:           #3c2ab6;
-      border-radius:   20px;
-      margin-top:      40px;
-      text-decoration: none;
+      .head {
+        font-size:     24px;
+        margin-bottom: 20px;
+        margin-top:    100px;
+      }
 
-      &:hover {
-        background: #3c2ab6;
-        color:      white;
+      a {
+        display:         block;
+        padding:         20px 25px;
+        background:      white;
+        color:           #002b67;
+        border-radius:   20px;
+        margin-top:      105px;
+        width:           80%;
+        text-decoration: none;
+
+        &:hover {
+          background: #002b67;
+          color:      white;
+        }
       }
     }
 
