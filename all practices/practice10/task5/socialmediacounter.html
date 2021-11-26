@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div class="counter-container">
+        <img src="../img/twitter.png" width="50" height="50" alt="">
+        <div class="counter" data-target="12000"></div>
+        <span>Twitter Followers</span>
+    </div>
+
+    <div class="counter-container">
+        <img src="../img/youtube.png" width="50" height="50" alt="">
+        <div class="counter" data-target="5000"></div>
+        <span>YouTube Subscribers</span>
+    </div>
+
+    <div class="counter-container">
+
+        <img src="../img/facebook.png" width="50" height="50" alt="">
+        <div class="counter" data-target="7500"></div>
+        <span>Facebook Fans</span>
+    </div>
+</div>
+<script>
+    const counters = document.querySelectorAll('.counter');
+
+    counters.forEach(counter => {
+        counter.innerText = '0'
+
+        const updateCounter = () => {
+            const target = +counter.getAttribute('data-target')
+            const c = +counter.innerText
+
+            const increment = target / 700
+
+            if (c < target) {
+                counter.innerText = `${Math.ceil(c + increment)}`
+                setTimeout(updateCounter, 1)
+            } else {
+                counter.innerText = target
+            }
+        };
+
+        updateCounter()
+    });
+</script>
+</body>
+</html>

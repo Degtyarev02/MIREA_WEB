@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="search">
+    <div class="icon">
+        <img src="../img/search.png" width="25" height="25" alt="">
+    </div>
+    <div class="input">
+        <input type="text" placeholder="Search" id="search">
+        <span class="clear">X</span>
+    </div>
+</div>
+<script>
+    const icon = document.querySelector('.icon');
+    const search = document.querySelector('.search');
+    const input = document.querySelector('.input');
+    const clearBtn = document.querySelector('.clear');
+    const searchField= document.getElementById('search')
+    let flag = false;
+    icon.onclick = function () {
+        search.classList.toggle('active')
+        if(!flag){
+            input.style.cssText = "display: flex;"
+            flag = true;
+        } else {
+            input.style.cssText = "display: none;"
+            flag = false;
+        }
+    }
+
+    clearBtn.onclick = function () {
+        searchField.value = '';
+    }
+</script>
+</body>
+</html>
