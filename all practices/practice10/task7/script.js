@@ -1,4 +1,3 @@
-
 let star = document.querySelectorAll(".star");
 let message = document.querySelector(".h3");
 let count = 0;
@@ -26,10 +25,12 @@ function change() {
         }, false);
 
         star[i].onclick = function () {
-            flag = true;
-            for (let k = 0; k < i + 1; ++k) {
-                count++;
-                star[k].src = "../img/staron.png";
+            if (!flag) {
+                for (let k = 0; k < i + 1; ++k) {
+                    count++;
+                    star[k].src = "../img/staron.png";
+                }
+                flag = true;
             }
             form.classList.add("starSelected");
             if (count <= 2) {
