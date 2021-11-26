@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Review</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="rating">
+        <img class="star star1" src="../img/staroff.png" width="32" height="32" alt="">
+        <img class="star star2" src="../img/staroff.png" width="32" height="32" alt="">
+        <img class="star star3" src="../img/staroff.png" width="32" height="32" alt="">
+        <img class="star star4" src="../img/staroff.png" width="32" height="32" alt="">
+        <img class="star star5" src="../img/staroff.png" width="32" height="32" alt="">
+    </div>
+    <div class="message">
+        <textarea type="text" class="text-message"></textarea>
+        <a href="#">Отправить</a>
+    </div>
+</div>
+<script>
+
+
+    let star5 = document.querySelector(".star5");
+    let star = document.querySelectorAll(".star");
+    let form = document.querySelector(".message");
+    let flag = false;
+
+    star5.addEventListener("mouseenter", function (event) {
+        for (let i = 0; i < star.length; ++i) {
+            star[i].src = "../img/staron.png";
+        }
+    }, false);
+
+    star5.addEventListener("mouseleave", function (event) {
+        if (!flag) {
+            for (let i = 0; i < star.length; ++i) {
+                star[i].src = "../img/staroff.png";
+            }
+        }
+    }, false);
+
+    star5.onclick = function () {
+        flag = true;
+        for (let i = 0; i < star.length; ++i) {
+            star[i].src = "../img/staron.png";
+        }
+        form.classList.add("starSelected");
+    }
+
+
+</script>
+</body>
+</html>

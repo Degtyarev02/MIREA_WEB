@@ -27,6 +27,7 @@ body {
   background: #3c2ab6;
   border-radius: 50%;
   z-index: 10000;
+  object-fit: cover;
 }
 .container .info {
   width: 0;
@@ -63,9 +64,9 @@ body {
   color: white;
 }
 .big-icon {
-  width: 350px!important;
-  height: 500px!important;
-  border-radius: 0!important;
-  border: none!important;
+  width: 350px !important;
+  height: 500px !important;
+  border-radius: 0 !important;
+  border: none !important;
 }
 /*# sourceMappingURL=style.css.map */
