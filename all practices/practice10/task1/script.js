@@ -29,7 +29,7 @@ checkBtn.addEventListener("click", e => {
     statusTxt.style.display = "block";
 
     let inputVal = inputField.value.split('').join(' ');
-    if (inputVal == captcha.innerText) {
+    if (inputVal === captcha.innerText) {
         statusTxt.style.color = "#0d9400";
         statusTxt.innerText = "Вы не робот";
         setTimeout(() => {
