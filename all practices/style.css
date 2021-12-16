@@ -1,0 +1,27 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: 'Open sans';
+  margin: 0;
+}
+a {
+  color: #5474ff;
+  font-weight: bolder;
+}
+h3 {
+  color: #5474ff;
+  margin-bottom: 20px;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_ul {
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 0 46px -7px rgba(154, 154, 154, 0.2);
+  margin-top: 150px;
+}
+/*# sourceMappingURL=style.css.map */
